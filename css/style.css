@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    font-family: sans-serif;
+}
+
+nav{
+    width: 100%;
+    height: 42px;
+    color: #fff;
+    font-size: 16px;
+    background: #0000ff;
+}
+
+nav ul{
+    list-style: none;
+    margin-left: 50px;
+}
+
+nav ul li{
+    float: left;
+}
+
+nav ul li button{
+    width: 250px;
+
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: none;
+    background: transparent;
+
+    margin: 0;
+    padding: 12px;
+    cursor: pointer;
+}
+
+nav ul li button:hover{
+    background: rgba(0,0,0,0.2);
+}
+
+nav ul li a + div{
+    width: 250px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: #0000ff;
+    text-align: center;
+    font-family: 'MedievalSharp', cursive;
+
+    position: absolute;
+}
+
+#reg +div{
+    opacity: 0;
+}
+
+#reg + div p{
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+#reg:hover + div{
+    opacity: 1;
+    transition: 1s;
+} 
+
+#developer + div{
+    opacity: 0;
+}
+
+#developer + div h4{
+    padding: 10px 0;
+}
+
+#developer + div ul{
+    list-style: none;
+    margin-left: 0;
+    text-align: left;
+}
+
+#developer + div ul li{
+    padding: 10px 0;
+    margin: 5px 20px;
+    float: none;
+}
+
+#developer:hover + div{
+    opacity: 1;
+    transition: 1s;
+}
+
+.cover{
+    height: 400px;
+    width: 100%;
+}
+
+.cover-text h2{
+    color: #fff;
+    font-family: 'MedievalSharp', cursive;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+
+    position: absolute;
+    top: 210px;
+    left: 500px;
+}
+
+.teamwork-meaning{
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    margin-top: 70px;
+    background: #f4f4f4;
+}
+
+
+.teamwork-meaning h3{
+    padding: 10px;
+    font-variant: small-caps;
+    margin-bottom: 30px;
+}
+
+.teamwork-meaning p{
+    padding: 5px;
+}
+
+.teamwork-meaning img{
+    width: 600px;
+    margin-top: 50px;
+    border-radius: 10px;
+    border: 2px solid #0000ff;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+.developers{
+    width: 100%;
+    height: 500px;
+    background: #0000ff;
+    text-align: center;
+}
+
+.developers h2{
+    color: #fff;
+    padding: 20px;
+    font-family: 'MedievalSharp', cursive;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.developers img{
+    width: 220px;
+    height: 200px;
+    padding: 0 20px;
+    border-radius: 50%;
+}
+
+#about{
+    width: 600px;
+    margin-left: 400px;
+    margin-top: 50px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+#about img{
+    width: 160px;
+    padding: 0;
+}
+
+#about p{
+    padding: 5px;
+}
+
+.contact-register{
+    color: #fff;
+
+    width: 100%;
+    height: 380px;
+    background: linear-gradient(90deg, blue 50%, #fff 50%);
+
+    margin-top: 60px;
+    border-top: 2px dotted blue;
+
+    position: relative;
+}
+
+.contact-register > h4{
+    width: 200px;
+    color: blue;
+    text-align: center;
+    background: #fff;
+    padding: 10px;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-left: 200px;
+}
+
+#contact{
+    width: 50%;
+}
+
+#contact table{
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+#contact table tr td{
+    width: 100px;
+    padding: 10px 0;
+}
+
+#contact table td::selection{
+    background: #fff;
+    color: blue;
+}
+
+#register{
+    color: blue;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+#register > h4{
+    width: 200px;
+    color: #fff;
+    text-align: center;
+    background: blue;
+    padding: 10px;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-left: 200px;
+}
+
+#register form table{
+    margin-top: 40px;
+    margin-left: 70px;
+}
+
+#register form table td{
+    padding: 10px 10px;
+}
+
+.input{
+    color: blue;
+    border: none;
+    border-bottom: 1px solid blue;
+}
+
+.input::placeholder{
+    color: blue;
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+.input:focus{
+    outline: 0;
+}
+
+.tdsubmit{
+    text-align: center;
+}
+
+.btn-submit{
+    height: 30px;
+    background: blue;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.btn-submit:hover{
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.icon{
+    color: blue;
+    font-size: 18px;
+    text-align: center;
+}
+
+.icon .fa-facebook{
+    padding: 0 20px;
+}
